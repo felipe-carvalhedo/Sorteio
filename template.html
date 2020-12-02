@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados do sorteio</title>
+</head>
+<body>  
+    <table style="width:100%">
+        <tr>
+          <th>Aposta</th>
+          <th>Acertos</th>
+        </tr>
+      {% for r in result %}
+        <tr>
+          <td>{{r[0]}}</td>
+          <td>{{r[1]}}</td>
+        </tr>
+      {%endfor%}
+      </table>
+</body>
+</html>
